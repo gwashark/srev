@@ -12,6 +12,8 @@
 			http-equiv="Content-Security-Policy"
 			content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:"
 		/>
+		<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+		<script>eruda.init();</script>
 		<title>リアルタイム地震ビューアー v1.6.3</title>
 		<style>
 			body {
@@ -169,14 +171,6 @@
 		<meta name="twitter:description" content="リアルタイムに地震関連情報を閲覧できるアプリです。気象庁が発表する地震情報・緊急地震速報・津波情報等を地図上に表示し、リアルタイムに更新されます。基本的に操作不要で、全自動で各情報が表示されます。" />
 		<meta name="twitter:image" content="https://kotoho7.github.io/scratch-realtime-earthquake-viewer-page/images/ogp_image.webp" />
 		<script type="module" crossorigin src="./index.js"></script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7WPBQ5B08"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-X7WPBQ5B08');
-	</script>
 </head>
 	<body>
 		<div id="app"></div>
